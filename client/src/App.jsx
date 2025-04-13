@@ -172,7 +172,9 @@ import { ThemeProvider } from "./components/ThemeProvider";
 // Import new pages
 import About from "./pages/About";
 import Blogs from "./pages/Blogs";
-import CertificationsPage from "./pages/CertificationPage";
+import CertificationPage from "./pages/CertificationPage";
+
+
 
 const appRouter = createBrowserRouter([
   {
@@ -198,7 +200,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "certifications",
-        element: <CertificationsPage />,
+        element: <CertificationPage />,
       },
       {
         path: "login",
