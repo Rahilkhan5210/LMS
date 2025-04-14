@@ -1,6 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const CERTIFICATION_API = "http://localhost:9000/api/v1/certification";
+// ✅ Make sure the base path is correct (your route is `/api/v1/certifications`)
+const CERTIFICATION_API = "http://localhost:9000/api/v1/certifications";
 
 export const certificationApi = createApi({
   reducerPath: "certificationApi",
@@ -11,26 +12,26 @@ export const certificationApi = createApi({
   }),
 
   endpoints: (builder) => ({
-    // ✅ Create new certification
+    // ✅ Create a new certification
     createCertification: builder.mutation({
-      query: ({ title, description, price, imageUrl, issuedBy, duration, validity }) => ({
-        url: "",
+      query: (certificationData) => ({
+        url: "/",
         method: "POST",
-        body: { title, description, price, imageUrl, issuedBy, duration, validity },
+        body: certificationData,
       }),
       invalidatesTags: ["Refetch_Certification"],
     }),
 
-    // ✅ Get all certifications
+    // ✅ Fetch all certifications
     getAllCertifications: builder.query({
       query: () => ({
-        url: "",
+        url: "/",
         method: "GET",
       }),
       providesTags: ["Refetch_Certification"],
     }),
 
-    // ✅ Get certification by ID
+    // ✅ Fetch a single certification by ID
     getCertificationById: builder.query({
       query: (id) => ({
         url: `/${id}`,
@@ -40,8 +41,12 @@ export const certificationApi = createApi({
   }),
 });
 
+// ✅ Export hooks
 export const {
   useCreateCertificationMutation,
   useGetAllCertificationsQuery,
   useGetCertificationByIdQuery,
 } = certificationApi;
+
+
+

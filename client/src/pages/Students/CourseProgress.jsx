@@ -241,7 +241,7 @@ const CourseProgress = () => {
   const completionPercentage = Math.round((completedLectures / totalLectures) * 100);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-100 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 px-4 py-8">
+    <div className="-mt-20 w-screen min-h-screen bg-gradient-to-br from-[#6cb9cc] via-[#0b67c4] to-[#8e3dda] dark:from-[#0f172a] dark:via-[#1e293b] dark:to-[#0f172a] px-4 py-8">
       {/* Header */}
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-extrabold text-gray-800 dark:text-white">{courseTitle}</h1>

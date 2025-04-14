@@ -269,7 +269,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="w-full bg-black text-white relative overflow-hidden">
+    <footer className="w-full text-white relative overflow-hidden bg-red-500">
       {/* Background Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-900 to-black opacity-95 pointer-events-none z-0" />
 

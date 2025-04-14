@@ -16,7 +16,7 @@ const Courses = () => {
   }
 
   return (
-    <div className="bg-gray-50 dark:bg-[#121212] w-full min-h-screen py-10 px-4 sm:px-6 lg:px-8">
+    <div className="w-screen bg-gray-50 dark:bg-[#121212]  min-h-screen py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-extrabold text-center text-gray-800 dark:text-white mb-12">
           🚀 Our Courses

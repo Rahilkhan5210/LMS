@@ -148,9 +148,9 @@ const CourseDetail = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#1F1C2C] to-[#928DAB] text-white">
+    <div className="-mt-20 w-screen min-h-screen bg-gradient-to-br from-[#1F1C2C] to-[#928DAB] text-white">
       {/* Header Section */}
-      <div className="bg-black bg-opacity-40 backdrop-blur-md shadow-md">
+      <div className="bg-gray-900 bg-opacity-40 backdrop-blur-md shadow-md">
         <div className="max-w-7xl mx-auto px-4 md:px-10 py-10 space-y-3">
           <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight">{course?.courseTitle}</h1>
           <p className="text-lg text-indigo-200">Unleash your learning with this powerful course</p>
@@ -200,7 +200,7 @@ const CourseDetail = () => {
         </div>
 
         {/* Preview Card */}
-        <div className="w-full lg:w-1/3">
+        <div className="lg:w-1/3">
           <div className="rounded-2xl bg-white bg-opacity-10 backdrop-blur-lg shadow-2xl overflow-hidden">
             <div className="p-4 space-y-4">
               <div className="aspect-video rounded-md overflow-hidden border border-white border-opacity-20">

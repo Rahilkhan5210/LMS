@@ -80,14 +80,14 @@ const HeroSection = () => {
   return (
     <>
       {/* Carousel Section */}
-      <div className="-mt-16 w-screen overflow-x-hidden">
+      <div className="-mt-14 w-screen bg-red-600">
         <HeroCarousel />
       </div>
 
       {/* Hero Content Section */}
-      <div className="w-screen min-h-screen relative bg-gradient-to-r from-blue-500 to-indigo-600 dark:from-gray-800 dark:to-gray-900 py-20 px-4 sm:px-8 flex items-center justify-center text-center overflow-x-hidden">
+      <div className="w-[100vw] min-h-screen relative bg-gradient-to-r from-blue-500 to-indigo-600 dark:from-gray-800 dark:to-gray-900 py-20 px-4 sm:px-8 flex items-center justify-center text-center overflow-x-hidden">
         <div className="max-w-4xl w-full">
-          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight text-center">
             Find the Best Courses for You
           </h1>
           <p className="text-gray-200 dark:text-gray-400 text-base sm:text-lg md:text-xl mb-8 md:mb-10">

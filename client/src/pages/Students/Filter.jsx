@@ -146,7 +146,7 @@ const Filter = ({ handleFilterChange }) => {
       transition={{ duration: 0.5 }}
       className="w-full md:w-[22%] bg-white/90 dark:bg-zinc-900/90 backdrop-blur-lg border border-gray-200 dark:border-gray-700 p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all"
     >
-      <div className="flex items-center justify-between mb-4">
+      <div className=" flex items-center justify-between mb-4">
         <h1 className="text-xl font-bold text-gray-800 dark:text-white flex items-center gap-2">
           <SlidersHorizontal className="text-blue-600" size={22} /> Filters
         </h1>

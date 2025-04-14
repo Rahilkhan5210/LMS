@@ -18,7 +18,7 @@ function BlogsPage() {
   });
 
   return (
-    <div className="-mt-14 min-h-screen w-full bg-gray-50 flex flex-col">
+    <div className="-mt-14 min-h-screen w-screen bg-gray-50 flex flex-col">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

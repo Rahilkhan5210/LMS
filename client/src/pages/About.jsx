@@ -9,7 +9,7 @@ import {
 
 export default function About() {
   return (
-    <div className="w-full -mt-16 min-h-screen bg-gray-50">
+    <div className="w-screen -mt-16 min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div className="w-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
