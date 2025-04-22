@@ -1,6 +1,6 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./App.css";
+
 
 // Layouts
 import MainLayout from "./Layout/MainLayout";
@@ -11,8 +11,9 @@ import Courses from "./pages/Students/Courses";
 import About from "./pages/About";
 import Blogs from "./pages/Blogs";
 import CertificationPage from "./pages/CertificationPage";
-import CertificationFullDetails from "./pages/CertificationFullDetails";
+import CertificationListing from "./pages/CertificationListing";
 import Login from "./pages/Login";
+import CertificationDetails from './pages/CertificationDetails';
 
 // Students (Protected)
 import MyLearning from "./pages/Students/MyLearning";
@@ -52,17 +53,18 @@ const appRouter = createBrowserRouter([
           <>
             <HeroSection />
             <Courses />
+            <CertificationListing/>
           </>
         ),
       },
       { path: "about", element: <About /> },
       { path: "blogs", element: <Blogs /> },
       { path: "certifications", element: <CertificationPage /> },
+      { path: "student/certifications", element: <CertificationListing /> },
       {
-        path: "certification/:category/:id",
-        element: <CertificationFullDetails />
+        path: "student/certification/:category/:id",
+        element: <CertificationDetails />
       },
-
       { path: "login", element: <AuthenticatedUser><Login /></AuthenticatedUser> },
       { path: "my-learning", element: <ProtectedRoute><MyLearning /></ProtectedRoute> },
       { path: "profile", element: <ProtectedRoute><Profile /></ProtectedRoute> },

@@ -6,7 +6,8 @@ export default function CertificationPage() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
-    <div className="-mt-5 min-h-screen bg-gray-500">
+    <div className="min-h-screen bg-gray-50">
+      {/* Header Section */}
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <h1 className="text-2xl font-bold text-blue-600">Certifications</h1>
@@ -19,6 +20,7 @@ export default function CertificationPage() {
         </div>
       </header>
 
+      {/* Optional Description or Hero Section */}
       <section className="max-w-7xl mx-auto px-4 py-8">
         <h2 className="text-xl font-semibold text-gray-800 mb-2">Boost your career</h2>
         <p className="text-gray-600 text-sm">
@@ -27,10 +29,12 @@ export default function CertificationPage() {
         </p>
       </section>
 
+      {/* Conditional Dropdown */}
       {showDropdown && (
         <CertificationDropdown onMouseLeave={() => setShowDropdown(false)} />
       )}
 
+      {/* Fallback or Static List Section (optional) */}
       <section className="max-w-7xl mx-auto px-4 py-12">
         <h3 className="text-lg font-bold mb-4 text-gray-700">Why Certifications?</h3>
         <ul className="list-disc pl-5 text-gray-600 space-y-2 text-sm">
@@ -42,3 +46,4 @@ export default function CertificationPage() {
     </div>
   );
 }
+

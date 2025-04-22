@@ -8,7 +8,7 @@ import Header from "@/pages/Students/Header";
 const MainLayout = () => {
   return (
     <>
-      <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-[#0f172a] overflow-hidden">
+      <div className="flex flex-col min-h-screen dark:bg-[#0f172a] overflow-hidden">
         {/* Navbar */}
         <Navbar />
 
@@ -33,3 +33,5 @@ const MainLayout = () => {
 };
 
 export default MainLayout;
+
+
